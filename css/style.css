@@ -62,7 +62,7 @@ p {
 
 @media (min-width: 320px) {
   .container {
-    width: 96%;
+    width: 310px;
   }
 }
 
