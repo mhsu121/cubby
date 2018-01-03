@@ -64,6 +64,9 @@ p {
   .container {
     width: 310px;
   }
+  .one-half {
+    width: 46%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -88,6 +91,15 @@ p {
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
    }
  }
 
@@ -134,7 +146,7 @@ p {
     font-size: 22px;
     line-height: 26px;
     font-weight: 100;
-    margin:25px 0 40px;
+    margin:25px 0 40px 0;
   }
   header .hero img {
     display: block;
