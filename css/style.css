@@ -64,8 +64,21 @@ p {
   .container {
     width: 310px;
   }
-  .one-half {
-    width: 46%;
+  header .hero h1 {
+    font-size:36px;
+    font-weight: normal;
+    margin:50px 0 0 0;
+  }
+  header .hero p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
+    margin:25px 0 40px 0;
+  }
+  header .hero img {
+    width: 310px;
+    display: block;
+    margin:3em auto 0;
   }
 }
 
