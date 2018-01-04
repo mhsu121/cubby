@@ -127,6 +127,11 @@ img {
    border: 2px solid #F03C69;
    box-shadow: 0px 2px 0px 0px #A2193B;
  }
+ .btn:hover {
+   background: #8CD93F;
+   border: 2px solid #8CD93F;
+   box-shadow: 0px 2px 0px 0px #22894E;
+ }
 
 /* MEDIA QUERIES */
 @media (min-width: 320px) and (max-width:374px) {
