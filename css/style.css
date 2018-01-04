@@ -191,7 +191,7 @@ img {
     margin:0 15px;
   }
 }
-@media (min-width: 414px) and (max-width: 768px) {
+@media (min-width: 414px) and (max-width: 767px) {
   .container {
     width: 400px;
   }
