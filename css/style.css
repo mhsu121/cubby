@@ -132,6 +132,11 @@ img {
 @media (min-width: 320px) {
   .container {
     width: 310px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
   }
   .one-half {
     width: 310px;
@@ -163,6 +168,11 @@ img {
 @media (min-width: 375px) {
   .container {
     width: 365px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
   }
   .one-half {
     width: 365px;
@@ -194,6 +204,11 @@ img {
 @media (min-width: 414px) {
   .container {
     width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
   }
   .one-half {
     width: 400px;
@@ -225,6 +240,11 @@ img {
 @media (min-width: 768px) {
    .container {
      width: 750px;
+     margin-right: auto;
+     margin-left: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+     position: relative;
    }
    .one-half {
      width:46%;
@@ -232,10 +252,19 @@ img {
    header .hero h1 {
      font-size:48px;
    }
+   header .hero p {
+     font-size:22px;
+     line-height: 26px;
+   }
  }
  @media (min-width: 992px) {
    .container {
      width: 970px;
+     margin-right: auto;
+     margin-left: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+     position: relative;
    }
    .one-half {
      width:46%;
@@ -245,11 +274,23 @@ img {
    }
    .one-fourth {
      width:21%;
+   }
+   header .hero h1 {
+     font-size:54px;
+   }
+   header .hero p {
+     font-size:22px;
+     line-height: 26px;
    }
  }
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
+     margin-right: auto;
+     margin-left: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+     position: relative;
    }
    .one-half {
      width:46%;
@@ -259,5 +300,12 @@ img {
    }
    .one-fourth {
      width:21%;
+   }
+   header .hero h1 {
+     font-size:54px;
+   }
+   header .hero p {
+     font-size:22px;
+     line-height: 26px;
    }
  }
