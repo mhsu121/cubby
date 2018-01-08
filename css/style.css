@@ -406,11 +406,6 @@ img {
     border-radius:12px;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   }
-  @media (min-width:768px) {
-    .bio {
-      margin-top: 10px;
-    }
-  }
   .bio.middle {
     padding:20px;
     margin-top: 10px;
