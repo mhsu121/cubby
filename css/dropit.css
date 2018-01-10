@@ -7,18 +7,36 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* These styles assume you are using ul and li */
-.dropit {
+/* global settings */
+ .dropit-trigger {
+  position: relative;
+ }
+ .dropit-open .dropit-submenu {
+   display: block;
+   background: #FFFFFF;
+   box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.30);
+   border-radius: 16px;
+ }
+ .dropit-open .dropit-submenu li {
+  display: block;
+  margin-bottom: 20px;
+ }
+ .dropit-open .dropit-submenu li:last-child {
+  margin-bottom: 0px;
+ }
+ .dropit .dropit-open .dropit-submenu li a:hover {
+  color:#8CD93F;
+ }
+
+/* Menu */
+.menu {
   list-style: none;
   padding:0;
   margin:0 30px;
   display:block;
   text-align:left;
 }
-.dropit .dropit-trigger {
-  position: relative;
-}
-.dropit .dropit-submenu {
+.menu .dropit-submenu {
   position: absolute;
   top: 100%;
   left: 0; /* dropdown left or right */
@@ -26,27 +44,73 @@
   display: none;
   min-width: 100px;
   list-style: none;
-  padding: 20px;
+  padding: 20px 30px;
   margin: 15px 0 0 0;
   text-align:left;
 }
-.dropit .dropit-open .dropit-submenu {
-  display: block;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
-  border-radius: 16px;
+.menu .dropit-open .dropit-submenu li a {
+ color:#333333;
+ font-size:15px;
+ text-decoration: none;
+ font-family: "Lato", Helvetica, Arial, sans-serif;
+ font-weight:100;
+ line-height:12px;
 }
- .dropit .dropit-open .dropit-submenu li {
-  display: block;
-  margin-bottom: 20px;
+
+ /* Left Account Settings */
+ .leftaccountsettings {
+   list-style: none;
+   padding:0;
+   margin:2px 10px 0 0;
+   display:inline-block;
+   float:right;
  }
- .dropit .dropit-open .dropit-submenu li:last-child {
-  margin-bottom: 0px;
+ .leftaccountsettings .dropit-submenu {
+   position: absolute;
+   bottom: 100%;
+   right: 0; /* dropdown left or right */
+   z-index: 1000;
+   display: none;
+   min-width: 145px;
+   list-style: none;
+   padding: 15px 20px 20px 20px;
+   margin: 0 0 6px 0;
+   text-align:left;
  }
- .dropit .dropit-open .dropit-submenu li a {
+ .leftaccountsettings .dropit-open .dropit-submenu li a {
   color:#333333;
   font-size:15px;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
+  line-height:26px;
+ }
+
+ /* Top Account Settings */
+ .topaccountsettings {
+   list-style: none;
+   padding:0;
+   margin:0 0 8px 0;
+   display:inline-block;
+   text-align:left;
+ }
+ .topaccountsettings .dropit-submenu {
+   position: absolute;
+   top: 100%;
+   right: 0; /* dropdown left or right */
+   z-index: 1000;
+   display: none;
+   min-width: 158px;
+   list-style: none;
+   padding: 15px 30px 20px 30px;
+   margin: 40px 0 0 0;
+   text-align:left;
+ }
+ .topaccountsettings .dropit-open .dropit-submenu li a {
+  color:#333333;
+  font-size:15px;
+  text-decoration: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight:100;
+  line-height:26px;
  }

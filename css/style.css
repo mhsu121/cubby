@@ -625,7 +625,7 @@ img {
  /* LEFT NAVBAR SETTINGS */
  .left-nav {
    height: 100%;
-   width:280px;
+   width:220px;
    position: absolute;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -641,6 +641,7 @@ img {
    width:220px;
    background: #3498DB;
    background-image: linear-gradient(206deg, #3498DB 0%, #8CD93F 94%);
+   position:fixed;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -691,7 +692,7 @@ img {
    }
  }
  .left-nav .site-logo {
-   padding:50px 30px 30px 30px;
+   padding:60px 30px 30px 30px;
    display:block;
    text-align: left;
  }
@@ -766,9 +767,9 @@ img {
  .left-nav .settings a {
    color:#FFFFFF;
    text-decoration: none;
-   text-align: right;
+   text-align: left;
    float: right;
-   margin-right:10px;
+   padding:0;
    margin-top:8px;
  }
  .left-nav .settings a:hover {
@@ -799,12 +800,17 @@ img {
 }
 @media (min-width:992px) {
   .top-nav {
-    padding-top:50px;
+    padding-top:60px;
   }
   .top-nav .header {
     padding-left:16.66666667%;
     margin:0px 1%;
   }
+  .top-nav .header h1 {
+    font-size: 32px;
+  }
+}
+@media (min-width:1200px) {
   .top-nav .header h1 {
     font-size: 36px;
   }
@@ -837,6 +843,7 @@ img {
    .top-nav .search {
      padding-left:20px;
      float:left;
+     margin-top:6px;
    }
    .top-nav .search input[type=text] {
     width:300px;
@@ -860,13 +867,14 @@ img {
      height:35px;
      width:35px;
      border-radius: 50%;
+     margin-top: 4px;
      margin-left:10px;
      display: inline-block;
    }
    .top-nav .settings a {
      color:#F03C69;
      text-decoration: none;
-     text-align: right;
+     text-align: left;
      float: right;
      margin-top:8px;
      margin-left:15px;
@@ -907,7 +915,7 @@ img {
 /* Laptops and Desktops */
  @media (min-width:992px) {
    .content {
-     padding:8.5em 1% 1.5em;
+     padding:9em 1% 1.5em;
      float:right;
      width:83.33333333%;
      position: relative;
