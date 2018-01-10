@@ -486,24 +486,75 @@ img {
 
  /* LEFT NAVBAR SETTINGS */
  .left-nav {
-   height: 100vh;
-   width:14.66666667%;
-   color:#FFFFFF;
+   height: 100%;
+   width:280px;
+   position: absolute;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+     -o-transform: translate(-280px,0); /** Opera **/
+     -moz-transform: translate(-280px,0); /** Firefox **/
+ }
+ .left-nav.open {
+   display:block;
+   width:220px;
    background: #3498DB;
    background-image: linear-gradient(206deg, #3498DB 0%, #8CD93F 94%);
-   float:left;
-   position: fixed;
-   display:block;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+     z-index: 100;
+ }
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:transparent;
+   color:#F03C69;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 5px 15px;
+   border-radius: 4px;
+   left: 15px;
+   top: 5px;
+ }
+ @media (min-width:992px) {
+   .left-nav {
+     height: 100vh;
+     width:14.66666667%;
+     color:#FFFFFF;
+     background: #3498DB;
+     background-image: linear-gradient(206deg, #3498DB 0%, #8CD93F 94%);
+     float:left;
+     position: fixed;
+     display:block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .left-nav.open {
+     width:14.66666667%;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .hamburger {
+     display:none;
+   }
  }
  .left-nav .site-logo {
-   padding:30px;
+   padding:50px 30px 30px 30px;
    display:block;
    text-align: left;
- }
- .left-nav .btn {
-   margin:0 30px;
-   display:block;
-   text-align:center;
  }
  .left-nav .items {
    padding:20px 0 0 0;
@@ -514,7 +565,7 @@ img {
    font-size: 16px;
    color: #333333;
    line-height: 15px;
-   padding-left:30px
+   padding-left:30px;
  }
  .left-nav .items ul {
    margin:0 0 30px;
@@ -561,6 +612,7 @@ img {
    display: inline-block;
  }
  .left-nav .settings p {
+   color:#FFFFFF;
    display: inline-block;
    vertical-align: top;
    padding-top: 8px;
@@ -604,21 +656,6 @@ img {
   float:left;
   display:block;
 }
-/* Larger Mobile Devices */
- @media (min-width:460px) {
-   .content {
-     padding:1.5em 1%;
-     float:right;
-     width:90%;
-     position: relative;
-   }
-   .content-item {
-     width:46%;
-     margin:0 2% 25px;
-     float:left;
-     display:block;
-   }
- }
 /* Tablets */
  @media (min-width:768px) {
    .content {
@@ -647,8 +684,12 @@ img {
      width:auto;
    }
    .content-item {
+     width:31.33333%;
+   }
+ }
+ @media (min-width:1200px) {
+   .content-item {
      width:23%;
-     margin:0 1% 25px;
    }
  }
 
