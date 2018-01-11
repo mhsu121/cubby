@@ -135,12 +135,15 @@ img {
    display: inline-block;
    margin:0 15px;
  }
- header nav ul > li.btn-outline {
+ header nav ul > li.signup-btn {
    padding:10px 0px;
  }
- header nav ul > li > a {
+ header nav ul > li > a.login {
    color:#FFFFFF;
    text-decoration: none;
+ }
+ header nav ul > li > a.login:hover {
+   color:#8CD93F;
  }
  @media (min-width:768px) {
    header nav {
