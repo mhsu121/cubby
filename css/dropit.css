@@ -32,9 +32,12 @@
 .menu {
   list-style: none;
   padding:0;
-  margin:0 30px;
+  margin:0;
+  text-align:center;
+}
+.menu .btn {
   display:block;
-  text-align:left;
+  margin: 0 30px;
 }
 .menu .dropit-submenu {
   position: absolute;
@@ -42,10 +45,11 @@
   left: 0; /* dropdown left or right */
   z-index: 1000;
   display: none;
-  min-width: 100px;
+  width: 100px;
   list-style: none;
   padding: 20px 30px;
-  margin: 15px 0 0 0;
+  margin-top: 3px;
+  margin-left: 30px;
   text-align:left;
 }
 .menu .dropit-open .dropit-submenu li a {
@@ -106,6 +110,15 @@
    margin: 40px 0 0 0;
    text-align:left;
  }
+ .topaccountsettings .dropit-open .dropit-submenu li p.upgrade {
+  color:#C5C4C4;
+  font-size:15px;
+  text-decoration: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight:100;
+  line-height:18px;
+  text-align:right;
+ }
  .topaccountsettings .dropit-open .dropit-submenu li a {
   color:#333333;
   font-size:15px;
@@ -113,4 +126,18 @@
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
   line-height:26px;
+ }
+ .topaccountsettings .dropit-open .dropit-submenu li a.upgrade {
+  color:#F03C69;
+  font-size:15px;
+  text-decoration: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight:700;
+  line-height:18px;
+ }
+ .topaccountsettings .dropit-open .dropit-submenu li a.upgrade:hover {
+  color:#8CD93F;
+ }
+ .topaccountsettings .dropit-open .dropit-submenu li img.divider {
+  margin: 30px 0 0 0;
  }
